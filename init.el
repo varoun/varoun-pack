@@ -8,3 +8,6 @@
 
 ;; Erlang
 (live-load-config-file "erlang.el")
+
+;; Org Mode
+(live-load-config-file "org.el")
