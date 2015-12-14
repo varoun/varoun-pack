@@ -12,17 +12,22 @@
 
 ;;; For Capture mode.
 (global-set-key "\C-cc" 'org-capture)
-(setq org-default-notes-file (concat org-directory "capture.org"))
+(setq org-default-notes-file (concat org-directory "inbox.org"))
+(setq org-capture-templates
+      '(("i" "Inbox" entry (file+headline "~/gtd/inbox.org" "Inbox")
+         "* IN %?\n %i %t")))
 
 
 ;;; Agenda files.
-(setq org-agenda-files (list "~/gtd/endurance.org"
-                             "~/gtd/home.org"
+(setq org-agenda-files (list "~/gtd/actions.org"
                              "~/gtd/birthdays.org"))
 
 ;;; Refile.
 (setq org-refile-targets (quote ((nil :maxlevel . 9)
                                  (org-agenda-files :maxlevel . 9))))
 
-;;; Todo completions.
+;;; Todo.
+(setq org-todo-keywords
+      '((sequence "TODO(t)" "|" "DONE(d)")
+        (sequence "IN(i)" "|" "Clarified(c)")))
 (setq org-log-done 'note)
