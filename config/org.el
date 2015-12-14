@@ -29,7 +29,7 @@
 
 ;;; Agenda files.
 (setq org-agenda-files (list "~/gtd/actions.org"
-                             "~/gtd/birthdays.org"))
+                             "~/gtd/calendar.org"))
 
 ;;; Refile.
 (setq org-refile-targets (quote ((nil :maxlevel . 9)
@@ -37,8 +37,9 @@
 
 ;;; Todo.
 (setq org-todo-keywords
-      '((sequence "TODO(t)" "|" "DONE(d)")
-        (sequence "IN(i)" "|" "Nexted(n)" "Trashed(j)"
-                  "Inubating(i)" "Project(p)" "Scheduled(s)" "Done(d)")))
+      '((sequence "TODO(t)" "Doing(p)" "Waiting(w)" "|" "DONE(d)")
+        (sequence "IN(i)" "|"
+                  "Trashed(j)" "Inubating(i)"
+                  "Deferred(n)" "Delegated(w)" "Calendered(c)" "Done(d)")))
 
 (setq org-log-done 'note)
