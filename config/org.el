@@ -15,7 +15,16 @@
 (setq org-default-notes-file (concat org-directory "inbox.org"))
 (setq org-capture-templates
       '(("i" "Inbox" entry (file+headline "~/gtd/inbox.org" "Inbox")
-         "* IN %?\n %i %t")))
+         "* IN %?\n %i %t")
+        ("h" "Home" entry (file+headline "~/gtd/actions.org" "Home")
+         "* TODO %?\n %i %t")
+        ("o" "Office" entry (file+headline "~/gtd/actions.org" "Office")
+         "* TODO %?\n %i %t")
+        ("a" "Agenda" entry (file+headline "~/gtd/actions.org" "Agenda")
+         "* TODO %?\n %i %t")
+        ("w" "Waiting" entry (file+headline "~/gtd/actions.org" "Waiting")
+         "* TODO %?\n %i %t")
+        ))
 
 
 ;;; Agenda files.
@@ -29,5 +38,7 @@
 ;;; Todo.
 (setq org-todo-keywords
       '((sequence "TODO(t)" "|" "DONE(d)")
-        (sequence "IN(i)" "|" "Clarified(c)")))
+        (sequence "IN(i)" "|" "Nexted(n)" "Trashed(j)"
+                  "Inubating(i)" "Project(p)" "Scheduled(s)" "Done(d)")))
+
 (setq org-log-done 'note)
