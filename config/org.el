@@ -24,12 +24,15 @@
          "* TODO %?\n %i %t")
         ("w" "Waiting" entry (file+headline "~/gtd/actions.org" "Waiting")
          "* TODO %?\n %i %t")
+        ("j" "Journal" entry (file+datetree "~/gtd/journal.org")
+         "* %?\nEntered on %U\n  %i\n  %a")
         ))
 
 
 ;;; Agenda files.
 (setq org-agenda-files (list "~/gtd/actions.org"
-                             "~/gtd/calendar.org"))
+                             "~/gtd/calendar.org"
+                             "~/gtd/projects.org"))
 
 ;;; Refile.
 (setq org-refile-targets (quote ((nil :maxlevel . 9)
