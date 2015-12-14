@@ -40,7 +40,7 @@
 
 ;;; Todo.
 (setq org-todo-keywords
-      '((sequence "TODO(t)" "Doing(p)" "Waiting(w)" "|" "DONE(d)")
+      '((sequence "TODO(t)" "Doing(p)" "|" "DONE(d)")
         (sequence "IN(i)" "|"
                   "Trashed(j)" "Inubating(i)"
                   "Deferred(n)" "Delegated(w)" "Calendered(c)" "Done(d)")))
