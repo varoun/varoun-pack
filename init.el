@@ -11,3 +11,6 @@
 
 ;; Org Mode
 (live-load-config-file "org.el")
+
+;; Paredit.
+(live-load-config-file "paredit.el")
