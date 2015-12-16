@@ -17,24 +17,24 @@
       '(("i" "Inbox" entry (file+headline "~/gtd/inbox.org" "Inbox")
          "* IN %?\n %i :PROPERTIES: \n  :CREATED: %t \n  :END:")
         ("h" "Home" entry (file+headline "~/gtd/actions.org" "Home")
-         "* TODO %?\n %i %t")
+         "* TODO %?\n %i :PROPERTIES: \n  :CREATED: %t \n  :END:")
         ("o" "Office" entry (file+headline "~/gtd/actions.org" "Office")
-         "* TODO %?\n %i %t")
+         "* TODO %?\n %i :PROPERTIES: \n  :CREATED: %t \n  :END:")
         ("a" "Agenda" entry (file+headline "~/gtd/actions.org" "Agenda")
-         "* TODO %?\n %i %t")
+         "* TODO %?\n %i :PROPERTIES: \n  :CREATED: %t \n  :END:")
         ("j" "Journal" entry (file+datetree "~/gtd/journal.org")
          "* %?\nEntered on %U\n  %i\n  %a")
         ("p" "Personal Project" entry
          (file+headline "~/gtd/projects.org" "Personal Projects")
-         "* %?\n %i %t")
+         "* %?\n %i :PROPERTIES: \n  :CREATED: %t \n  :END:")
         ("w" "Professional Project" entry
          (file+headline "~/gtd/projects.org" "Professional Projects")
-         "* %?\n %i %t")
+         "* %?\n %i :PROPERTIES: \n  :CREATED: %t \n  :END:")
         ("d" "Projects Delegated" entry
          (file+headline "~/gtd/projects.org" "Projects Delegated")
-         "* %?\n %i %t")
+         "* %?\n %i :PROPERTIES: \n  :CREATED: %t \n  :END:")
         ("s" "Someday" entry (file "~/gtd/someday.org" )
-         "* %?\n %i %t")
+         "* %?\n %i :PROPERTIES: \n  :CREATED: %t \n  :END:")
         ))
 
 
