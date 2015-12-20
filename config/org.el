@@ -35,6 +35,10 @@
          "* TODO %? [/] \n %i :PROPERTIES: \n  :CREATED: %u \n  :END:")
         ("s" "Someday" entry (file "~/gtd/someday.org" )
          "* %?\n %i :PROPERTIES: \n  :CREATED: %u \n  :END:")
+        ("c" "Calendar" entry (file+headline "~/gtd/calendar.org" "Tasks")
+         "* TODO %?\n %i :PROPERTIES: \n  :CREATED: %u \n  :END:")
+        ("r" "Reminder" entry (file+headline "~/gtd/calendar.org" "Reminders")
+         "* TODO %?\n %i :PROPERTIES: \n  :CREATED: %u \n  :END:")
         ))
 
 
