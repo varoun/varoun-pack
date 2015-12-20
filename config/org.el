@@ -26,13 +26,13 @@
          "* %?\nEntered on %U\n  %i\n  %a")
         ("p" "Personal Project" entry
          (file+headline "~/gtd/projects.org" "Personal Projects")
-         "* %?\n %i :PROPERTIES: \n  :CREATED: %t \n  :END:")
+         "* TODO %? [/] \n %i :PROPERTIES: \n  :CREATED: %t \n  :END:")
         ("w" "Professional Project" entry
          (file+headline "~/gtd/projects.org" "Professional Projects")
-         "* %?\n %i :PROPERTIES: \n  :CREATED: %t \n  :END:")
+         "* TODO %? [/] \n %i :PROPERTIES: \n  :CREATED: %t \n  :END:")
         ("d" "Projects Delegated" entry
          (file+headline "~/gtd/projects.org" "Projects Delegated")
-         "* %?\n %i :PROPERTIES: \n  :CREATED: %t \n  :END:")
+         "* TODO %? [/] \n %i :PROPERTIES: \n  :CREATED: %t \n  :END:")
         ("s" "Someday" entry (file "~/gtd/someday.org" )
          "* %?\n %i :PROPERTIES: \n  :CREATED: %t \n  :END:")
         ))
