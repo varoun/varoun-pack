@@ -15,26 +15,26 @@
 (setq org-default-notes-file (concat org-directory "inbox.org"))
 (setq org-capture-templates
       '(("i" "Inbox" entry (file+headline "~/gtd/inbox.org" "Inbox")
-         "* IN %?\n %i :PROPERTIES: \n  :CREATED: %t \n  :END:")
+         "* IN %?\n %i :PROPERTIES: \n  :CREATED: %u \n  :END:")
         ("h" "Home" entry (file+headline "~/gtd/actions.org" "Home")
-         "* TODO %?\n %i :PROPERTIES: \n  :CREATED: %t \n  :END:")
+         "* TODO %?\n %i :PROPERTIES: \n  :CREATED: %u \n  :END:")
         ("o" "Office" entry (file+headline "~/gtd/actions.org" "Office")
-         "* TODO %?\n %i :PROPERTIES: \n  :CREATED: %t \n  :END:")
+         "* TODO %?\n %i :PROPERTIES: \n  :CREATED: %u \n  :END:")
         ("a" "Agenda" entry (file+headline "~/gtd/actions.org" "Agenda")
-         "* TODO %?\n %i :PROPERTIES: \n  :CREATED: %t \n  :END:")
+         "* TODO %?\n %i :PROPERTIES: \n  :CREATED: %u \n  :END:")
         ("j" "Journal" entry (file+datetree "~/gtd/journal.org")
          "* %?\nEntered on %U\n  %i\n  %a")
         ("p" "Personal Project" entry
          (file+headline "~/gtd/projects.org" "Personal Projects")
-         "* TODO %? [/] \n %i :PROPERTIES: \n  :CREATED: %t \n  :END:")
+         "* TODO %? [/] \n %i :PROPERTIES: \n  :CREATED: %u \n  :END:")
         ("w" "Professional Project" entry
          (file+headline "~/gtd/projects.org" "Professional Projects")
-         "* TODO %? [/] \n %i :PROPERTIES: \n  :CREATED: %t \n  :END:")
+         "* TODO %? [/] \n %i :PROPERTIES: \n  :CREATED: %u \n  :END:")
         ("d" "Projects Delegated" entry
          (file+headline "~/gtd/projects.org" "Projects Delegated")
-         "* TODO %? [/] \n %i :PROPERTIES: \n  :CREATED: %t \n  :END:")
+         "* TODO %? [/] \n %i :PROPERTIES: \n  :CREATED: %u \n  :END:")
         ("s" "Someday" entry (file "~/gtd/someday.org" )
-         "* %?\n %i :PROPERTIES: \n  :CREATED: %t \n  :END:")
+         "* %?\n %i :PROPERTIES: \n  :CREATED: %u \n  :END:")
         ))
 
 
