@@ -14,3 +14,6 @@
 
 ;; Paredit.
 (live-load-config-file "paredit.el")
+
+;; Scheme
+(live-load-config-file "scheme.el")
