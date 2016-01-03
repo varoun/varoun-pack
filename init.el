@@ -17,3 +17,6 @@
 
 ;; Scheme
 (live-load-config-file "scheme.el")
+
+;; Define the CL implementation to use.
+(setq inferior-lisp-program "~/apps/ccl/dx86cl64")
