@@ -24,6 +24,8 @@
          "* TODO %?\n %i :PROPERTIES: \n  :CREATED: %u \n  :END:")
         ("j" "Journal" entry (file+datetree "~/gtd/journal.org")
          "* %?\nEntered on %U\n  %i\n  %a")
+        ("l" "Log" entry (file+datetree "~/gtd/log.org")
+         "* %?\nEntered on %U\n  %i\n  %a")
         ("p" "Personal Project" entry
          (file+headline "~/gtd/projects.org" "Personal Projects")
          "* TODO %? [/] \n %i :PROPERTIES: \n  :CREATED: %u \n  :END:")
